@@ -1,2 +1,60 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
-/* Your CSS Code here. */
+.player {
+  max-width: 750px;
+  width: 100%;
+  border: 2px solid #333;
+  background: #000;
+}
+
+.viewer {
+  width: 100%;
+  display: block;
+}
+
+.progress {
+  height: 10px;
+  background: #444;
+  cursor: pointer;
+}
+
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #ffc600;
+}
+
+.player__controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #222;
+}
+
+.player__button,
+.player__controls button {
+  background: #ffc600;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.player__button:hover,
+.player__controls button:hover {
+  background: #ffdb4d;
+}
+
+.player__slider {
+  flex: 1;
+}
